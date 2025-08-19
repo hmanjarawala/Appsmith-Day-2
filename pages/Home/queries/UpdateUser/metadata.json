@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68a3276fd0b8bb03282a0ce8_96a57255-6417-4879-b4e4-bf24bbcff4d9",
-  "id": "Page1_UpdateUser",
+  "id": "Home_UpdateUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "UpdateUser",
-    "pageId": "Page1",
+    "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

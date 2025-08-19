@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_55765a09-ab08-4190-9a2a-5c60961e25c0",
-  "id": "Page1_GetGenders",
+  "gitSyncId": "68a4809fd0b8bb03282a359e_6dcf91e3-766a-48c9-b800-7b1afaf456f4",
+  "id": "Users From the Country_FindUserFromCountry",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT(gender) FROM public.\"users\" WHERE gender <> '';",
+      "body": "SELECT name, email, country FROM public.\"users\" \nWHERE country = '{{this.params.country}}'\nLIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "Users Database",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "GetGenders",
-    "pageId": "Page1",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "FindUserFromCountry",
+    "pageId": "Users From the Country",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }

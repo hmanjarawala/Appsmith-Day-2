@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_b6c7b9ff-7995-4cbf-803e-ad164df0717f",
-  "id": "Page1_DeleteUser",
+  "gitSyncId": "68a4809fd0b8bb03282a359e_0b105a72-6a0e-47a9-9b88-25ca57326e42",
+  "id": "Users From the Country_FindCountry",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.\"users\"\n  WHERE id = '{{Table1.selectedRow.id}}'",
+      "body": "SELECT country FROM public.\"users\" \nWHERE id = {{Table1.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "DeleteUser",
-    "pageId": "Page1",
-    "runBehaviour": "MANUAL",
+    "name": "FindCountry",
+    "pageId": "Users From the Country",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
