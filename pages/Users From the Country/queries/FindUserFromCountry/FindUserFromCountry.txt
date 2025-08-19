@@ -1,0 +1,3 @@
+SELECT name, email, country FROM public."users" 
+WHERE country = '{{FindCountry.data[0].country}}'
+LIMIT 10;
