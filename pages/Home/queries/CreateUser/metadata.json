@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_96a57255-6417-4879-b4e4-bf24bbcff4d9",
-  "id": "Page1_UpdateUser",
+  "gitSyncId": "68a3276fd0b8bb03282a0ce8_f75fc99f-ae18-4769-9d78-5c9d7a605408",
+  "id": "Home_CreateUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"users\" SET\n    \"gender\" = '{{CreateUserForm.formData.gender}}',\n    \"email\" = '{{CreateUserForm.formData.email}}',\n    \"name\" = '{{CreateUserForm.formData.name}}'\nWHERE id = '{{Table1.selectedRow.id}}'",
+      "body": "INSERT INTO public.\"users\" (\"gender\", \"email\", \"name\")\n  VALUES ('{{CreateUserForm.formData.gender}}', '{{CreateUserForm.formData.email}}', '{{CreateUserForm.formData.name}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "name": "UpdateUser",
-    "pageId": "Page1",
+    "name": "CreateUser",
+    "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

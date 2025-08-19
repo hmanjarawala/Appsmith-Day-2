@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_b6c7b9ff-7995-4cbf-803e-ad164df0717f",
-  "id": "Page1_DeleteUser",
+  "gitSyncId": "68a4809fd0b8bb03282a359e_4e379e43-ba0c-431d-94ab-91355bb15365",
+  "id": "Users From the Country_DeleteUser",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "DeleteUser",
-    "pageId": "Page1",
+    "pageId": "Users From the Country",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
